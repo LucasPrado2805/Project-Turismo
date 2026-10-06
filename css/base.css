@@ -1,0 +1,39 @@
+/* ===== CORES DO DESIGN ===== */
+:root {
+    --azul-escuro: #0B3B5C;
+    --azul-noite: #072A42;
+    --azul-card: #134A70;
+    --azul-borda: #2A5F86;
+    --azul: #1F6FA8;
+    --azul-claro: #E3EEF7;
+    --cinza-fundo: #F4F7FA;
+    --amarelo: #F5B700;
+    --texto: #3D5266;
+    --texto-claro: #C9D6E2;
+    --borda: #D6E0EA;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", Arial, sans-serif;
+    color: var(--texto);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+.container {
+    max-width: 1248px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}

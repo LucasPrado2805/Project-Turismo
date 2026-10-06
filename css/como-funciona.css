@@ -1,0 +1,70 @@
+/* ===== SEÇÃO: COMO FUNCIONA ===== */
+.passos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.passo {
+    position: relative;
+    background: var(--cinza-fundo);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.passo-topo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.passo-numero {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--azul);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.passo h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--azul-escuro);
+}
+
+.passo p {
+    font-size: 16px;
+}
+
+/* Seta amarela entre os cards */
+.passo:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    right: -32px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: var(--amarelo);
+}
+
+@media (max-width: 900px) {
+    .passos {
+        grid-template-columns: 1fr;
+    }
+
+    .passo:not(:last-child)::after {
+        content: "↓";
+        right: 50%;
+        top: auto;
+        bottom: -36px;
+        transform: translateX(50%);
+    }
+}

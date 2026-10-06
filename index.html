@@ -1,12 +1,287 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HospedaSeguro</title>
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos (a ordem importa: base primeiro) -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/secoes.css">
+    <link rel="stylesheet" href="css/problema.css">
+    <link rel="stylesheet" href="css/como-funciona.css">
+    <link rel="stylesheet" href="css/apps.css">
+    <link rel="stylesheet" href="css/diferenciais.css">
+    <link rel="stylesheet" href="css/implantacao.css">
+    <link rel="stylesheet" href="css/rodape.css">
 </head>
+
 <body>
-    <h1>Olá hospeda seguro </h1>
-    
+
+    <!-- ========== MENU ========== -->
+    <header class="menu">
+        <div class="container menu-conteudo">
+            <a href="#" class="logo">
+                <span class="logo-icone"></span>
+                HospedaSeguro
+            </a>
+
+            <nav>
+                <ul class="menu-links">
+                    <li><a href="#problema">Problema</a></li>
+                    <li><a href="#como-funciona">Como funciona</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#implantacao">Implantação</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ========== HERO ========== -->
+        <section class="hero">
+            <div class="container hero-conteudo">
+
+                <div class="hero-texto">
+                    <h1>Emergência climática!</h1>
+                    <p class="hero-subtitulo">
+                        Equipe preparada. Hóspedes seguros.<br>
+                        Negócio protegido.
+                    </p>
+                    <p class="hero-descricao">
+                        O HospedaSeguro guia cada funcionário, passo a passo,
+                        antes, durante e depois de eventos climáticos extremos.
+                        Mesmo sem internet.
+                    </p>
+                    <a href="#como-funciona" class="botao">Veja mais</a>
+                </div>
+
+                <div class="hero-imagem">
+                    <span>Imagem:app ou sei la</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========== O PROBLEMA ========== -->
+        <section id="problema" class="secao secao-problema">
+            <div class="container">
+
+                <h2 class="secao-titulo">Você está preparado?</h2>
+                <p class="secao-subtitulo">
+                    Eventos extremos estão mais frequentes, e um plano guardado
+                    na gaveta não protege ninguém.
+                </p>
+
+                <div class="cards-dados">
+                    <div class="card-dado">
+                        <span class="card-dado-rotulo">Enchentes</span>
+                        <strong class="card-dado-numero">2x</strong>
+                        <p>mais desastres por chuva por ano do que na década de 2010</p>
+                    </div>
+
+                    <div class="card-dado">
+                        <span class="card-dado-rotulo">Deslizamentos</span>
+                        <strong class="card-dado-numero">53%</strong>
+                        <p>dos alertas de desastre em 2024 foram de risco de deslizamento</p>
+                    </div>
+
+                    <div class="card-dado">
+                        <span class="card-dado-rotulo">Ventanias</span>
+                        <strong class="card-dado-numero">19x</strong>
+                        <p>mais desastres por ciclones e frentes frias no país</p>
+                    </div>
+
+                    <div class="card-dado">
+                        <span class="card-dado-rotulo">Apagões</span>
+                        <strong class="card-dado-numero">3,1 mi</strong>
+                        <p>de pessoas sem luz após um único temporal em SP (2024)</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========== COMO FUNCIONA ========== -->
+        <section id="como-funciona" class="secao">
+            <div class="container">
+
+                <h2 class="secao-titulo">Prevenir. Alertar. Agir.</h2>
+                <p class="secao-subtitulo">
+                    Seu plano de emergência vira ação, no celular de cada funcionário.
+                </p>
+
+                <div class="passos">
+                    <div class="passo">
+                        <div class="passo-topo">
+                            <span class="passo-numero">1</span>
+                            <h3>Prevenção (observar)</h3>
+                        </div>
+                        <p>Inspeções de calhas, nível do rio e gerador antes que o risco vire crise.</p>
+                    </div>
+
+                    <div class="passo">
+                        <div class="passo-topo">
+                            <span class="passo-numero">2</span>
+                            <h3>Alerta (modo crise)</h3>
+                        </div>
+                        <p>Um toque do gestor e o celular de toda a equipe toca, até no Não Perturbe.</p>
+                    </div>
+
+                    <div class="passo">
+                        <div class="passo-topo">
+                            <span class="passo-numero">3</span>
+                            <h3>Agir (resposta)</h3>
+                        </div>
+                        <p>Cada um recebe o que fazer, o que dizer e a rota segura. Sem internet.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ========== DOIS APPS ========== -->
+        <section id="apps" class="secao secao-apps">
+            <div class="container">
+
+                <h2 class="secao-titulo">Dois apps, um só sistema</h2>
+                <p class="secao-subtitulo">
+                    Um painel de comando para quem gerencia e um guia simples para quem age.
+                </p>
+
+                <div class="apps">
+                    <div class="app-card">
+                        <div class="app-imagem">Print do app</div>
+                        <div>
+                            <h3>App do gestor</h3>
+                            <p>
+                                Cadastre as áreas da pousada, crie protocolos, acompanhe
+                                cada tarefa em tempo real e dispare o modo crise com um toque.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="app-card">
+                        <div class="app-imagem">Print do app</div>
+                        <div>
+                            <h3>App do colaborador</h3>
+                            <p>
+                                Receba tarefas passo a passo, confirme com um toque e uma foto,
+                                e avise o gestor se ficar isolado ou com a rota bloqueada.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+                <!-- ========== DIFERENCIAIS ========== -->
+        <section id="diferenciais" class="secao secao-escura">
+            <div class="container">
+
+                <h2 class="secao-titulo">Feito para o pior cenário</h2>
+                <p class="secao-subtitulo">
+                    Quando faltam luz, sinal e calma, o HospedaSeguro continua funcionando.
+                </p>
+
+                <div class="diferenciais">
+                    <div class="diferencial">
+                        <span class="diferencial-icone">📴</span>
+                        <h3>Funciona offline</h3>
+                        <p>Protocolos no celular, mesmo sem internet.</p>
+                    </div>
+
+                    <div class="diferencial">
+                        <span class="diferencial-icone">🔔</span>
+                        <h3>Alertas sonoros e visuais</h3>
+                        <p>Som e flash que furam o Não Perturbe.</p>
+                    </div>
+
+                    <div class="diferencial">
+                        <span class="diferencial-icone">🧭</span>
+                        <h3>Rotas de fuga dinâmicas</h3>
+                        <p>Trajeto recalculado se uma área inundar.</p>
+                    </div>
+
+                    <div class="diferencial">
+                        <span class="diferencial-icone">🤝</span>
+                        <h3>Cuidado com hóspedes</h3>
+                        <p>Scripts para acalmar e checklist de presença.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ========== IMPLANTAÇÃO ========== -->
+        <section id="implantacao" class="secao secao-implantacao">
+            <div class="container">
+
+                <h2 class="secao-titulo">Sua pousada pronta em 5 etapas</h2>
+                <p class="secao-subtitulo">
+                    Cada propriedade tem riscos diferentes. Por isso, a implantação
+                    é feita sob medida com a nossa equipe.
+                </p>
+
+                <ol class="etapas">
+                    <li class="etapa">
+                        <span class="etapa-ponto"></span>
+                        <h3>Análise do local</h3>
+                        <p>Levantamento das áreas de risco da propriedade</p>
+                    </li>
+
+                    <li class="etapa">
+                        <span class="etapa-ponto"></span>
+                        <h3>Rotas e protocolos</h3>
+                        <p>Rotas de fuga e protocolos sob medida</p>
+                    </li>
+
+                    <li class="etapa">
+                        <span class="etapa-ponto"></span>
+                        <h3>Configuração do app</h3>
+                        <p>Setores, equipe e tarefas de cada um</p>
+                    </li>
+
+                    <li class="etapa">
+                        <span class="etapa-ponto"></span>
+                        <h3>Treinamento</h3>
+                        <p>Cada funcionário sabe o seu papel</p>
+                    </li>
+
+                    <li class="etapa">
+                        <span class="etapa-ponto"></span>
+                        <h3>Simulações</h3>
+                        <p>Simulados, atualizações e suporte contínuo</p>
+                    </li>
+                </ol>
+
+            </div>
+        </section>
+
+    </main>
+        <!-- ========== RODAPÉ ========== -->
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <div>
+                <p class="rodape-marca">HospedaSeguro</p>
+                <p class="rodape-descricao">
+                    Gestão de emergências climáticas para meios de hospedagem.
+                </p>
+            </div>
+
+            <nav class="rodape-links">
+                <a href="#">Equipe</a>
+                <span>·</span>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+    </footer>
+
 </body>
+
 </html>

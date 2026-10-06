@@ -1,0 +1,42 @@
+/* ===== RODAPÉ ===== */
+.rodape {
+    background: var(--azul-noite);
+    padding: 64px 0;
+}
+
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.rodape-marca {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.rodape-descricao {
+    font-size: 15px;
+    color: #9FB3C8;
+    margin-top: 8px;
+    max-width: 340px;
+}
+
+.rodape-links {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    color: #9FB3C8;
+}
+
+.rodape-links a:hover {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .rodape-conteudo {
+        flex-direction: column;
+    }
+}

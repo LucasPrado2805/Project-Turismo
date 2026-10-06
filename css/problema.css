@@ -1,0 +1,53 @@
+/* ===== SEÇÃO: O PROBLEMA ===== */
+.secao-problema {
+    background: var(--azul-claro);
+}
+
+.cards-dados {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.card-dado {
+    background: white;
+    border: 1px solid #B8CEE2;
+    border-radius: 12px;
+    padding: 28px 24px;
+}
+
+.card-dado-rotulo {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--azul);
+}
+
+.card-dado-numero {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--azul);
+    margin: 12px 0 8px;
+}
+
+.card-dado p {
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+/* Tablet: 2 por linha */
+@media (max-width: 1024px) {
+    .cards-dados {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celular: 1 por linha */
+@media (max-width: 600px) {
+    .cards-dados {
+        grid-template-columns: 1fr;
+    }
+}

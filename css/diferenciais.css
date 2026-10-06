@@ -1,0 +1,51 @@
+/* ===== SEÇÃO: DIFERENCIAIS ===== */
+.diferenciais {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.diferencial {
+    background: var(--azul-card);
+    border: 1px solid var(--azul-borda);
+    border-radius: 12px;
+    padding: 28px 24px;
+    text-align: center;
+}
+
+.diferencial-icone {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: var(--azul-borda);
+    border: 2px solid var(--amarelo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.diferencial h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.diferencial p {
+    font-size: 16px;
+    color: var(--texto-claro);
+}
+
+@media (max-width: 1024px) {
+    .diferenciais {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .diferenciais {
+        grid-template-columns: 1fr;
+    }
+}
